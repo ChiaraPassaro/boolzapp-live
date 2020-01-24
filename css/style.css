@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.template {
+  display: none;
+}
+
 .clearfix::after {
   content: '';
   display: table;
@@ -12,6 +16,26 @@
 .float-left {
   float: left;
 }
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: lightblue;
+}
+.avatar img {
+  width: 100%;
+}
+
+/* typo */
+h2 {
+  font-size: 16px;
+  font-weight: normal;
+}
+h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
 
 body {
   display: flex;
@@ -19,7 +43,10 @@ body {
   align-items: center;
   width: 100%;
   height: 100vh;
+  min-width: 700px;
   background-color: red;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
 }
 
 .container {
@@ -27,46 +54,162 @@ body {
   height: 90%;
   background: white;
 }
+
+.header {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(234, 234, 234);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.icons {
+  color: rgb(177, 177, 177);
+}
+.icons i {
+  margin: 0 10px;
+  font-size: 22px;
+}
+
 .col-left {
   width: 35%;
   height: 100%;
   background-color: blue;
 }
-.header {
-  width: 100%;
-  height: 70px;
-  background-color: pink;
-}
+/* .col-left .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+} */
+
+
 .disclaimer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 70px;
-  background-color: orange;
+  background-color: rgb(142, 218, 252);
+}
+.disclaimer .disclaimer-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.disclaimer .disclaimer-icon i{
+  font-size: 25px;
+  color: rgb(142, 218, 252);
 }
 .contact-search {
+  display: flex;
   width: 100%;
   height: 50px;
   background-color: purple;
 }
+.wrapper-input {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  background: white;
+  border: 1px solid grey;
+}
+.wrapper-input input {
+  border: 0;
+  width: 80%;
+  height: 100%;
+}
+
 .contacts {
   height: calc( 100% - 190px);
   background-color: green;
   overflow-y: scroll;
 }
-
+.contacts-list {
+  list-style: none;
+}
+.contact-element {
+  display: flex;
+  padding: 10px;
+}
+.contact-element .avatar {
+  margin-right: 10px;
+}
+.contact-element .contact-info {
+  width: 90%;
+}
+.contact-info-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .col-right {
   width: 65%;
   height: 100%;
   background-color: yellow;
 }
-
+.col-right .contact-active {
+  width: 70%;
+}
+.col-right .contact-active small{
+  color: rgb(177, 177, 177);
+}
 .col-right-messages {
+  display: none;
   height: calc(100% - 140px);
+  padding: 40px;
   background-color: lightgrey;
   overflow-y: scroll;
 }
+.col-right-messages.active {
+  display: block;
+}
+
+.message {
+  min-width: 30%;
+  max-width: 60%;
+  padding: 5px;
+  margin: 10px;
+
+  border-radius: 5px;
+}
+.message-top {
+  display: flex;
+  justify-content: space-between;
+}
+.message-bottom {
+  text-align: right;
+}
+.message.sent {
+  float: right;
+  clear: both;
+  background-color: green;
+}
+
+.message.received {
+  float: left;
+  clear: both;
+  background: white;
+}
 
 .col-right-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   height: 70px;
   background-color: orange;
+}
+.col-right-footer .send-message {
+  width: 70%;
 }

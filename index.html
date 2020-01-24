@@ -17,25 +17,59 @@
     <div class="col-left float-left">
       <!-- header -->
       <div class="header">
-
+        <div class="avatar">
+          <img src="img/avatar_1.jpg" alt="Pincopallo">
+        </div>
+        <div class="icons">
+          <i class="fas fa-circle-notch"></i>
+          <i class="fas fa-comment-alt"></i>
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
       </div>
       <!-- /header -->
 
       <!-- disclaimer -->
       <div class="disclaimer">
-
+        <div class="disclaimer-icon">
+          <i class="fa fa-bell-slash" aria-hidden="true"></i>
+        </div>
+        <div class="disclaimer-text">
+          <h3>Ricevi notifiche di nuovi messaggi</h3>
+          <a href="">Attiva notifiche desktop</a>
+        </div>
       </div>
       <!-- /disclaimer -->
 
       <!-- search -->
       <div class="contact-search">
-
+        <div class="wrapper-input">
+          <div class="search-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <input type="text" name="contact-name" value="">
+        </div>
       </div>
       <!-- /search -->
 
       <!-- contacts -->
       <div class="contacts">
+        <ul class="contacts-list">
+          <li class="contact-element" data-contact="0">
+            <div class="avatar">
+              <img src="img/avatar_1.jpg" alt="Pincopallo">
+            </div>
+            <div class="contact-info">
+              <div class="contact-info-top">
+                <h3 class="contact-name">Michele</h3>
+                <small class="contact-time">17.53</small>
+              </div>
+              <div class="contact-info-bottom">
+                <small>Non poteva essere altrimenti</small>
+              </div>
+            </div>
 
+          </li>
+        </ul>
       </div>
       <!-- /contacts -->
 
@@ -44,25 +78,110 @@
     <div class="col-right float-left">
       <!-- header -->
       <div class="header">
-
+        <div class="avatar">
+          <img src="img/avatar_1.jpg" alt="Pincopallo">
+        </div>
+        <div class="contact-active">
+          <h2 class="contact-name">Michele</h2>
+          <small class="contact-time">Ultimo accesso oggi alle 15.40</small>
+        </div>
+        <div class="icons">
+					<i class="fas fa-search"></i>
+					<i class="fas fa-paperclip"></i>
+					<i class="fas fa-ellipsis-v"></i>
+        </div>
       </div>
       <!-- /header -->
 
       <!-- messages -->
-      <div class="col-right-messages">
-
+      <div class="col-right-messages active" data-contact="0">
+        <div class="message sent">
+          <div class="message-top">
+            <p class="message-text">Ciao come stai?</p>
+            <i class="fa fa-chevron-down f-right message-options"></i>
+          </div>
+          <div class="message-bottom">
+            <small class="message-time">10:40</small>
+          </div>
+        </div>
+        <div class="message received">
+          <div class="message-top">
+            <p class="message-text">Ciao come stai?</p>
+            <i class="fa fa-chevron-down f-right message-options"></i>
+          </div>
+          <div class="message-bottom">
+            <small class="message-time">10:40</small>
+          </div>
+        </div>
+        <div class="message sent">
+          <div class="message-top">
+            <p class="message-text">Ciao come stai?</p>
+            <i class="fa fa-chevron-down f-right message-options"></i>
+          </div>
+          <div class="message-bottom">
+            <small class="message-time">10:40</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-right-messages" data-contact="1">
+        <div class="message sent">
+          <div class="message-top">
+            <p class="message-text">Ciao come stai?</p>
+            <i class="fa fa-chevron-down f-right message-options"></i>
+          </div>
+          <div class="message-bottom">
+            <small class="message-time">10:40</small>
+          </div>
+        </div>
+        <div class="message received">
+          <div class="message-top">
+            <p class="message-text">Ciao come stai?</p>
+            <i class="fa fa-chevron-down f-right message-options"></i>
+          </div>
+          <div class="message-bottom">
+            <small class="message-time">10:40</small>
+          </div>
+        </div>
+        <div class="message sent">
+          <div class="message-top">
+            <p class="message-text">Ciao come stai?</p>
+            <i class="fa fa-chevron-down f-right message-options"></i>
+          </div>
+          <div class="message-bottom">
+            <small class="message-time">10:40</small>
+          </div>
+        </div>
       </div>
       <!-- /messages -->
 
       <!-- footer -->
       <div class="col-right-footer">
-
+        <div class="col-right-footer-icon">
+					<i class="far fa-smile"></i>
+				</div>
+        <input type="text" class="send-message">
+        <div class="col-right-footer-icon icon-send">
+					<i class="fa fa-microphone" aria-hidden="true"></i>
+				</div>
       </div>
       <!-- /footer -->
 
     </div>
   </div>
   <!-- /container -->
+
+  <div class="template">
+    <div class="message">
+      <div class="message-top">
+        <p class="message-text"></p>
+        <i class="fa fa-chevron-down f-right message-options"></i>
+      </div>
+      <div class="message-bottom">
+        <small class="message-time"></small>
+      </div>
+    </div>
+  </div>
+
   <script src="js/script.js"></script>
 </body>
 </html>
