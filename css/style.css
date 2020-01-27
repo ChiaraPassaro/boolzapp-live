@@ -170,10 +170,13 @@ body {
 .col-right .contact-active small{
   color: rgb(177, 177, 177);
 }
+
+/* Aggiunto container di tutti i messaggi che ha la scroll*/
 .messages-wrapper {
   height: calc(100% - 140px);
   overflow-y: scroll;
 }
+
 .col-right-messages {
   display: none;
   min-height: 100%;
