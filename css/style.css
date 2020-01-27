@@ -75,7 +75,6 @@ body {
 .col-left {
   width: 35%;
   height: 100%;
-  background-color: blue;
 }
 /* .col-left .header {
   display: flex;
@@ -132,7 +131,6 @@ body {
 
 .contacts {
   height: calc( 100% - 190px);
-  background-color: green;
   overflow-y: scroll;
 }
 .contacts-list {
@@ -141,6 +139,13 @@ body {
 .contact-element {
   display: flex;
   padding: 10px;
+}
+.contact-element.active,
+.contact-element:hover,
+.contact-element:active,
+.contact-element:focus {
+  background-color: lightgrey;
+  cursor: pointer;
 }
 .contact-element .avatar {
   margin-right: 10px;
