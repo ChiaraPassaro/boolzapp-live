@@ -67,8 +67,11 @@ function sendResponse() {
 
 // funzione che scrolla
 function scrollMessage() {
+   // altezza elemento conversazione attiva
     var heightContainer = $('.col-right-messages.active').height();
-    $('.col-right-messages.active').scrollTop(heightContainer);
+    console.log(heightContainer);
+    // spostiamo scroll container di tutte le conversazioni
+    $('.messages-wrapper').scrollTop(heightContainer);
 }
 
 // Funzione che aggiunge zero

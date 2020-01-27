@@ -170,12 +170,15 @@ body {
 .col-right .contact-active small{
   color: rgb(177, 177, 177);
 }
+.messages-wrapper {
+  height: calc(100% - 140px);
+  overflow-y: scroll;
+}
 .col-right-messages {
   display: none;
-  height: calc(100% - 140px);
+  min-height: 100%;
   padding: 40px;
   background-color: lightgrey;
-  overflow-y: scroll;
 }
 .col-right-messages.active {
   display: block;
