@@ -23,20 +23,22 @@ $(document).ready(function () {
     });
   });
 
-  // $(document).on('click', '.message-options', function() {
-  //   $('.message-link.active').removeClass('active');
-  //   $('.message-options.active').removeClass('active');
-  //   $(this).addClass('active');
-  //   $(this).parent().siblings('.message-link').addClass('active');
-  // });
+
+
+  // mostra e nasconde i dropdown
+  $(document).on('click', '.message-options', function() {
+    $(this).parent().siblings('.message-link').toggleClass('active');
+    $(this).parents('.message').siblings('.message').find('.message-link').removeClass('active');
+  });
+
   // $(document).on('click', '.message-options.active', function() {
     //   console.log('non sono active');
     //   $(this).parent().siblings('.message-link').removeClass('active');
     // });
 
-  $(document).on('click', '.message-options', function() {
-    $(this).parent().siblings('.message-link').toggleClass('active');
-  });
+    // $(document).on('click', '.message-options', function() {
+    //   $(this).parent().siblings('.message-link').toggleClass('active');
+    // });
 
   $(document).on('click', '.message-delete', function() {
     // $(this).parent().parent().parent().remove();
