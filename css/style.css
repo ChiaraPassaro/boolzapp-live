@@ -188,11 +188,11 @@ body {
 }
 
 .message {
+  position: relative;
   min-width: 30%;
   max-width: 60%;
   padding: 5px;
   margin: 10px;
-
   border-radius: 5px;
 }
 .message-top {
@@ -207,13 +207,36 @@ body {
   clear: both;
   background-color: green;
 }
-
 .message.received {
   float: left;
   clear: both;
   background: white;
 }
+.message:hover .message-options,
+.message:active .message-options,
+.message:focus .message-options{
+  display: block;
+  cursor: pointer;
+}
+.message-options {
+  display: none;
+}
 
+.message-link {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  padding: 10px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+  background: white;
+}
+.message-link.active {
+  display: block;
+}
+.message-link ul {
+  list-style:  none;
+}
 .col-right-footer {
   display: flex;
   justify-content: space-around;
